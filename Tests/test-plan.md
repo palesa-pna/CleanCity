@@ -16,7 +16,8 @@
 ### 🎯 Project Management Setup Instructions
 
 - **Choose a Tool:**  
-  - Use Jira (see Jira Setup Guide) or GitHub Kanban (see GitHub Projects docs)
+  - Use Jira (see Jira Setup Guide) or GitHub Kanban (see GitHub Projects docgit init
+s)
 
 - **Create Project Board:**  
   - Set up columns for workflow  
