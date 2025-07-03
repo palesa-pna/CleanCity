@@ -1,7 +1,7 @@
 # 🧪 Test Plan & Project Management for Clean City
 
 **Version:** 1.0  
-**Last Updated:** 2025-07-03  
+**Last Updated:** 2025-07-03
 **Owner:** Quality Army  
 
 ---
