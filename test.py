@@ -4,7 +4,7 @@ Step| Action                | Verification                                 | Scr
 | --| ----------------------| ---------------------------------------------| -------------------- | --------------------------------------|
 | 1 | Clear browser cache   | DevTools → Network → "Disable cache" checked | [Cache Clear]        | Console tab active, no errors on load |
 | 2 | Open DevTools(F12)    | Console tab active, no errors on load        | [DevTools Open]      | Console tab active, no errors on load |
-| 3 | Navigate to Home Page | URL: http: // localhost: 3000 | [Home Page] | Home page loaded successfully |
+| 3 | Navigate to Home Page | URL: http: // localhost: 3000                | [Home Page]          | Home page loaded successfully         |
 
 
 
