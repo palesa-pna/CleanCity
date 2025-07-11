@@ -63,13 +63,14 @@ Phases Covered: Phase 2 (Test Design), Phase 3 (Execution)
 Key outcomes:
 - All forms, filters, and dashboards rendered correctly.
 ```
+
 **Test cases summary**
 |Category	   |Total   | Tests	|Passed	|Failed |
 |--------------|--------|--------|--------|-------|
-|Functional	   | 14	   | 14	   | 14     |   0   |
-|Non-Functional| 3      | 3      |	3     |   0   |
-|Accessibility | 2	   | 2	   | 2      |   0   |
-|Cross-Browser | 1      | 1      | 1      |   0   |
+|Functional	   | 14	   | 14	   | 14     | 0     |
+|Non-Functional| 3      | 3      |	3     | 0     |
+|Accessibility | 2	   | 2	   | 2      | 0     |
+|Cross-Browser | 1      | 1      | 1      | 0     |
 ```
 
 **Test Users and Sample Content**
@@ -136,6 +137,7 @@ Blocked: 0
 **Tools Used**
 - Jira: Test management & bug tracking
 - Browserstack: BrowserStack – Cross-browser testing
+- Netlify - Deployment link: https://cleancityqa.netlify.app/
 ```
 
 
