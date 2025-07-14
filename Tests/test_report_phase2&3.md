@@ -113,14 +113,14 @@ Blocked: 0
 |TC-07        | Update Pickup Status (Admin)           | 09/07/20205	    | Nompumelelo Mthembu   | Pass	         | Status updated correctly    |
 |TC-08        | Filter Requests by Status	             | 09/07/20205     | Nompumelelo Mthembu   | Pass	         | Proper filtering implemented   |
 |TC-09        | Filter Requests by Location            | 09/07/20205     |Nompumelelo Mthembu    | Pass	         | Proper filtering implemented   |
-|TC-10        | Filter Requests by Status and Location |	09/07/20205     | Nompumelelo Mthembu   | Pass	         | Correct requests displayed      |
-|TC-11        | Accessibility Check (Screen Reader)    |	09/07/20205	    | Nompumelelo Mthembu   | Pass	         | All elements correctly read    |
-|TC-12        | Cross-Browser Compatibility            | 09/07/20205	    | Nompumelelo Mthembu   | Pass           | No issues found across browsers|
-|TC-13	     | Response Time	                         | 09/07/20205	    | Nompumelelo Mthembu   | Pass	         | Loaded within expected time    |
-|TC-14	     | Tab Navigation	                      | 09/07/20205     | Nompumelelo Mthembu   | Pass   	      | All elements accessible via Tab|
-|TC-NF1	     | Performance Testing	                   | 09/07/20205	    | Nompumelelo Mthembu   | Pass	         | Application performed well under load   |
-|TC-NF2	     | Load Testing	                        | 09/07/20205	    | Nompumelelo Mthembu   | Pass	         | Met load testing criteria      |
-|TC-NF3       | Security Testing                      | 09/07/20205      | Nompumelelo Mthembu   | Pass	         | No vulnerabilities found       |
+|TC-10        | Filter Requests by Status and Location |	09/07/20205     | Vuthlari Mabaso   | Pass	         | Correct requests displayed      |
+|TC-11        | Accessibility Check (Screen Reader)    |	09/07/20205	    |  Vuthlari Mabaso   | Pass	         | All elements correctly read    |
+|TC-12        | Cross-Browser Compatibility            | 09/07/20205	    |  Vuthlari Mabaso   | Pass           | No issues found across browsers|
+|TC-13	     | Response Time	                         | 09/07/20205	    |  Vuthlari Mabaso   | Pass	         | Loaded within expected time    |
+|TC-14	     | Tab Navigation	                      | 09/07/20205     |  Vuthlari Mabaso   | Pass   	      | All elements accessible via Tab|
+|TC-NF1	     | Performance Testing	                   | 09/07/20205	    |  Vuthlari Mabaso   | Pass	         | Application performed well under load   |
+|TC-NF2	     | Load Testing	                        | 09/07/20205	    |  Vuthlari Mabaso   | Pass	         | Met load testing criteria      |
+|TC-NF3       | Security Testing                      | 09/07/20205      |  Vuthlari Mabaso   | Pass	         | No vulnerabilities found       |
 
 ```
 **Bug Summary**
