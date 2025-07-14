@@ -2,7 +2,7 @@ Student Name : Vuthlari Mabaso
 Date : 08/07/2025 
 
 TEST CASES 
-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 
@@ -93,7 +93,7 @@ Lighthouse Audit Results:
 Accessibility Score: 89/100 
 Missing alt - text: 3 items
  
-3.4 UI State Tes ng 
+3.4 UI State Testing 
 TC-UI-01: Real-Time Status Updates 
 Test Procedure: 
 1. Admin Panel → Select REQ005 
