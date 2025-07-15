@@ -1,15 +1,19 @@
-Test plan : login functionality plan
-Project : Clean City Application 
+# 🧪Test plan 
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Project : Clean City Application
+
 Prepared by : Vuthlari Mabaso 
+
 Date : 9th July 2025
 
-1. Objective :
+# Objective :
 To verify the login functionality with valid and invalid credentials to ensure secure access control while using the application 
  
-2. Scope 
+# Scope 
 Covers funtionality , UI validation , negative test scenario , security , Administrative funtion ,  
 
-3. Features to be tested 
+# 🧪 Features to be tested 
 
 * Username 
 * Email account 
