@@ -14,15 +14,15 @@ Step| Action                | Verification                                 | Scr
 
 
 
-Technical Valida on: 
+Technical Validation: 
 // Verify clean localStorage 
 console.log(localStorage.length);  // Should return 0 
-#. Detailed Test Execu on 
-# Form Valida on Tes ng 
+#. Detailed Test Execution 
+# Form Valida on Testing 
 TC-FV-01: Required Field Valida on 
 Test Data: 
 "scenario": "Empty submission", 
-"fields": ["name", "loca on", "wasteType", "date"] 
+"fields": ["name", "location", "wasteType", "date"] 
 Procedure: 
 1. Navigate to Home Page  
 2. Click "Submit Request" without entering data 
