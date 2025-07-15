@@ -45,9 +45,9 @@ Expected vs Actual:
 TC-FILT-01: Loca on Filter Accuracy 
 Test Matrix:
  
-| Filter  | Outcome          |
-| --------| ---------------- |
-| Eldoret | Nairobi Requests |
+| Filter  | Outcome          | Actual Outcome       | Bug 
+| --------| ---------------- | -------------------- | ----------------
+| Eldoret | Eldoret Requests | Nairobi Requests     |
 
 
 
@@ -123,15 +123,18 @@ Console Warnings:
 
 # Defect Documentation 
 # Confirmed Bugs 
-| ID               | Description             | Severity | Technical Root Cause             |
-| ---------------- | ----------------------- | -------- | -------------------------------- | 
-| BUG - FV - 0 1   | Missing date validation | Medium   | No event listener for date input |
-| BUG - FILT - 0 1 | Hardcoded filter        | High     | Static value in filterRequests() |
+| ID               | Description                        | Severity | Technical Root Cause                  |
+| ---------------- | ---------------------------------- | -------- | ------------------------------------- | 
+| BUG - FV - 0 1   | Missing date validation            | Medium   | No event listener for date input      |
+| BUG - FILT - 0 1 | Hardcoded filter                   | High     | Static value in filterRequests()      |
+| BUG-FV-02         | Password min length not enforced   | Medium   | No minlength attribute or JS check    |
+| BUG-FV-03        | Passwords not matched on register  | Medium   | No JS validation for confirm password |
+| BUG-FILT-01      | Hardcoded filter                   | High     | Static value in filterRequests()      |
+| BUG-ACC-01       | Missing alt-text                   | Medium   | No alt attribute on images            |
+| BUG-UI-01        | UI does not auto-update on status  | Medium   | No state sync after update            |
+| BUG-BOUND-01     | Name field accepts 500+ chars      | Medium   | No maxlength or truncation            |
+| BUG-BOUND-02     | RequestID field heap overflow      | High     | No input length validation            |
 
-
-
-BUG - ACC - 0 1
-Missing alt - text for images 
 
 
 Sign-Off:  
