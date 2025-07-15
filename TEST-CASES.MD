@@ -118,7 +118,7 @@ Console Warnings:
 [Input Valida on] 512 - char input exceeds recommended 100 - char limit
 
 
-🐞# Defect Documentation 
+ # 🐞Defect Documentation 
 # Confirmed Bugs 
 | ID               | Description                        | Severity | Technical Root Cause                  |
 | ---------------- | ---------------------------------- | -------- | ------------------------------------- | 
