@@ -4,21 +4,8 @@ Date : 08/07/2025
 TEST CASES 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-2. Test Environment Setup 
-2.1 Pre-Test Configura on 
+#. Test Environment Setup 
+# Pre-Test Configura on 
 Step| Action                | Verification                                 | Screenshot Reference |    Results                            |
 | --| ----------------------| ---------------------------------------------| -------------------- | --------------------------------------|
 | 1 | Clear browser cache   | DevTools → Network → "Disable cache" checked | [Cache Clear]        | Console tab active, no errors on load |
@@ -30,8 +17,8 @@ Step| Action                | Verification                                 | Scr
 Technical Valida on: 
 // Verify clean localStorage 
 console.log(localStorage.length);  // Should return 0 
-3. Detailed Test Execu on 
-3.1 Form Valida on Tes ng 
+#. Detailed Test Execu on 
+# Form Valida on Tes ng 
 TC-FV-01: Required Field Valida on 
 Test Data: 
 "scenario": "Empty submission", 
@@ -54,7 +41,7 @@ Expected vs Actual:
 | Console Monitoring: | [Form Valida on] Missing valida on for: dateField |
    
 
-3.2 Filter Func onality Testing 
+# Filter Functionality Testing 
 TC-FILT-01: Loca on Filter Accuracy 
 Test Matrix:
  
@@ -74,7 +61,8 @@ javascript
 // Hardcoded filter (bug) 
 return requests.filter(req => req.loca on === "Nairobi"); 
 Visual Evidence: 
-// a ach screenshot 
+// a ach screenshot
+
 3.3 Accessibility Tes ng 
 TC-ACC-01: Image Alt-Text Verifica on 
 Screen Reader Test Protocol: 
@@ -87,13 +75,13 @@ Actual Output:
 "Image: Unlabeled" (repeated 3 mes) 
 HTML Analysis: 
 html 
-<!-- Bug Demonstra on --> 
+<!-- Bug Demonstration --> 
 <img src="waste.jpg"> <!-- Missing alt a ribute --> 
 Lighthouse Audit Results: 
 Accessibility Score: 89/100 
 Missing alt - text: 3 items
  
-3.4 UI State Testing 
+# UI State Testing 
 TC-UI-01: Real-Time Status Updates 
 Test Procedure: 
 1. Admin Panel → Select REQ005 
@@ -118,7 +106,7 @@ Observed Behavior:
 • UI requires manual refresh to reflect changes 
 • Root Cause: Missing state synchroniza on
 
-3.5 Boundary Testing 
+# Boundary Testing 
 TC - BOUND - 0 1: Extreme Input Handling
 
 Test Cases:
@@ -133,8 +121,8 @@ Console Warnings:
 [Input Valida on] 512 - char input exceeds recommended 100 - char limit
 
 
-4. Defect Documentation 
-4.1 Confirmed Bugs 
+# Defect Documentation 
+# Confirmed Bugs 
 | ID               | Description             | Severity | Technical Root Cause             |
 | ---------------- | ----------------------- | -------- | -------------------------------- | 
 | BUG - FV - 0 1   | Missing date validation | Medium   | No event listener for date input |
