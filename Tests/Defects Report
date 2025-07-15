@@ -1,33 +1,44 @@
 Defects Report  
 
-
-1. Accessibility Issues
-Missing ARIA attributes: No ARIA roles or labels for navigation, forms, or error messages. This may hinder screen reader users.
-Form error messages: Error <div>s (e.g., id="waste-error") are not associated with their respective inputs using aria-describedby.
+Title : Accessibility Issues
+Description : Missing ARIA attributes: No ARIA roles or labels for navigation, forms, or error messages. This may hinder screen reader users.
 Image alt attributes: Images in the Awareness section lack alt attributes, which is required for accessibility.
-Label association: Some labels (e.g., for radio buttons) do not use for attributes, which can reduce accessibility.
 
-2. Form Validation and Usability
-Client-side validation: No evidence of client-side validation for required fields beyond the HTML required attribute. No JavaScript validation for matching passwords or email format.
-Password requirements: The password field hints at a minimum length but does not enforce it in the HTML (minlength attribute missing).
-No feedback on successful/failed form submission: Success and error messages are present but hidden by default; unclear if they are shown on actual submission. 
+Environment : Chrome
 
-3. Security Concerns
-Password fields: No autocomplete="new-password" or autocomplete="current-password" attributes on password fields.
-Demo credentials: Demo accounts are shown on the login page, which is fine for a demo but should be removed for production.
+Severity : Minor 
 
-4. User Experience
-No loading indicators: No feedback for users during async operations (e.g., form submission, dashboard loading).
-No error handling for network failures: No indication of how errors are handled if the backend is unreachable.
+Priority : High
 
-5. Code Organization
-Inline JavaScript: The script is loaded at the end, but all logic is in script.js. Consider modularizing for maintainability.
-Repeated code: Error message <div>s are repeated for each form field; could be abstracted for DRYness.
 
-6. Other Issues
-Hardcoded contact info: Contact information is hardcoded in the Awareness section; consider externalizing for easier updates.
-No favicon: No favicon is set for the site.
-Recommendation:
-Address accessibility and validation issues first, as these directly impact user experience and inclusivity. Then, improve semantic structure and security best practices.
+
+Title : Form Validation and Usability
+Description : No feedback on successful/failed form submission: Success and error messages are present but hidden by default; unclear if they are shown on actual submission. 
+
+Environment : Chrome 
+
+Severity : 
+
+Priority : 
+
+Expected Vs Actual 
+
+
+
+Title : Security Concerns regarding login details
+Description : Demo credentials: Demo accounts are shown on the login page, which is fine for a demo but should be removed for production.
+
+Environment : 
+
+Severity : 
+
+Priority :
+
+
+
+
+Title : User Experience
+Description : No loading indicators: No feedback for users during async operations (e.g., form submission, dashboard loading).
+
 
 
