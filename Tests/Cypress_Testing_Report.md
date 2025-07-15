@@ -1,6 +1,7 @@
 # ✅ Cypress Test Report – E2E Auth → Dashboard  
 **Project:** CleanCity – Waste Pickup Scheduler  
 **Test Scenario:** End‑to‑End Authentication Flow (Login → Dashboard)
+**QA Tester:** Nompumelelo A. Mthembu
 
 ---
 
@@ -23,7 +24,6 @@
 | npm | 10.x |
 | Cypress | 14.5.1 |
 | Browser | Electron (Headless) |
-| Directory | `C:\CleanCity` |
 | Test Spec | `cypress/e2e/auth_dashboard.cy.js` |
 
 ---
