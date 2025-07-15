@@ -1,7 +1,7 @@
-Defects Report  
+🐞 Defects Report  
 
 Title : Accessibility Issues
-Description : Missing ARIA attributes: No ARIA roles or labels for navigation, forms, or error messages. This may hinder screen reader users.
+📰 Description : Missing ARIA attributes: No ARIA roles or labels for navigation, forms, or error messages. This may hinder screen reader users.
 Image alt attributes: Images in the Awareness section lack alt attributes, which is required for accessibility.
 
 Environment : Chrome
@@ -13,7 +13,7 @@ Priority : High
 
 
 Title : Form Validation and Usability
-Description : No feedback on successful/failed form submission: Success and error messages are present but hidden by default; unclear if they are shown on actual submission. 
+📰 Description : No feedback on successful/failed form submission: Success and error messages are present but hidden by default; unclear if they are shown on actual submission. 
 
 Environment : Chrome 
 
@@ -26,7 +26,7 @@ Expected Vs Actual
 
 
 Title : Security Concerns regarding login details
-Description : Demo credentials: Demo accounts are shown on the login page, which is fine for a demo but should be removed for production.
+📰 Description : Demo credentials: Demo accounts are shown on the login page, which is fine for a demo but should be removed for production.
 
 Environment : 
 
@@ -38,7 +38,7 @@ Priority :
 
 
 Title : User Experience
-Description : No loading indicators: No feedback for users during async operations (e.g., form submission, dashboard loading).
+📰 Description : No loading indicators: No feedback for users during async operations (e.g., form submission, dashboard loading).
 
 
 
