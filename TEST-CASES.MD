@@ -15,8 +15,8 @@ Technical Validation:
 // Verify clean localStorage 
 console.log(localStorage.length);  // Should return 0 
 #. Detailed Test Execution 
-# Form Valida on Testing 
-TC-FV-01: Required Field Valida on 
+# Form Validation Testing 
+TC-FV-01: Required Field Validation 
 Test Data: 
 "scenario": "Empty submission", 
 "fields": ["name", "location", "wasteType", "date"] 
