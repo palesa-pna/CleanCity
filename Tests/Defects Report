@@ -2,7 +2,6 @@
 
 📚 Title : Accessibility Issues
 📰 Description : Missing ARIA attributes: No ARIA roles or labels for navigation, forms, or error messages. This may hinder screen reader users.
-Image alt attributes: Images in the Awareness section lack alt attributes, which is required for accessibility.
 
 Environment : Chrome
 
