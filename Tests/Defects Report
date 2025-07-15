@@ -6,9 +6,13 @@ Image alt attributes: Images in the Awareness section lack alt attributes, which
 
 Environment : Chrome
 
-Severity : Minor 
+Severity : Critical
 
 Priority : High
+
+☑ Expected Vs ❌ Actual
+
+#☑ Expected 
 
 
 
@@ -17,28 +21,46 @@ Priority : High
 
 Environment : Chrome 
 
-Severity : 
+Severity : Minor 
 
 Priority : 
 
-Expected Vs Actual 
+Expected Vs ❌ Actual 
+
+#☑ Expected 
 
 
 
 📚 Title : Security Concerns regarding login details
 📰 Description : Demo credentials: Demo accounts are shown on the login page, which is fine for a demo but should be removed for production.
 
-Environment : 
+Environment : Chrome 
 
-Severity : 
+Severity : Critical 
 
-Priority :
+Priority : 
+
+Expected Vs ❌ Actual
+
+#☑ Expected 
 
 
 
 
 📚 Title : User Experience
 📰 Description : No loading indicators: No feedback for users during async operations (e.g., form submission, dashboard loading).
+
+Environment :
+
+Severity : 
+
+Priority
+
+#☑ Expected Vs ❌ Actual 
+
+#☑ Expected 
+
+#❌ Actual 
 
 
 
