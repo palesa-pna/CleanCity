@@ -5,7 +5,7 @@ TEST CASES
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 #. Test Environment Setup 
-# Pre-Test Configura on 
+# Pre-Test Configuration 
 Step| Action                | Verification                                 | Screenshot Reference |    Results                            |
 | --| ----------------------| ---------------------------------------------| -------------------- | --------------------------------------|
 | 1 | Clear browser cache   | DevTools → Network → "Disable cache" checked | [Cache Clear]        | Console tab active, no errors on load |
