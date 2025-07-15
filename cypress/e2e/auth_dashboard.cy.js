@@ -2,7 +2,7 @@ describe('CleanCity App - Auth to Dashboard Flow', () => {
   it('should log in and navigate to dashboard successfully', () => {
     cy.visit('https://cleancityqa.netlify.app/');
 
-    // ✅ specifically click the login link in the nav
+
     cy.get('#auth-links a[data-page="login"]').click();
 
     cy.get('#login-page').should('be.visible');
