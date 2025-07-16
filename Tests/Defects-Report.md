@@ -1,4 +1,5 @@
-#**🐞 Defects Report ** 
+#🐞 Defects Report
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 📚 Title : Accessibility Issues
 📰 Description : Missing ARIA attributes: No ARIA roles or labels for navigation, forms, or error messages. This may hinder screen reader users.
