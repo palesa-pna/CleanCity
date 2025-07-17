@@ -1,5 +1,5 @@
 
-## CleanCity Test Schedule
+## 🫧 CleanCity Test Schedule
 
 | **Phase**               | **Description**                                                                                  | **Tools/Approach**                           | **Deadline**  |
 |------------------------ |----------------------------------------------------------------------------------------------- |----------------------------------------------|--------------|
@@ -11,7 +11,7 @@
 
 ---
 
-### Test Coverage Includes
+### 🧪Test Coverage Includes
 - **Authentication:** Registration, login, password/session handling, user roles
 - **Waste Pickup Features:** Scheduling, management, validation, data persistence
 - **Dashboard & Analytics:** Data visualization, gamification, real-time updates
@@ -20,7 +20,7 @@
 - **Accessibility:** Cross-browser and cross-device compatibility, WCAG 2.1 compliance
 - **Performance:** Load, stress, and scalability
 
-### Testing Management & Execution
+### 🧪Testing Management & Execution
 - **Management:** Jira or GitHub Projects for tracking.
 - **Automation:** Jest, Cypress, k6 for automated testing.
 - **Manual Testing:** Exploratory, accessibility, and real-device testing.
