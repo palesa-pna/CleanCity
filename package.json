@@ -37,5 +37,22 @@
       "last 1 safari version"
     ]
   },
-  "homepage": "."
-} 
+  "homepage": "http://.",
+  "main": "script.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/palesa-pna/CleanCity.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/palesa-pna/CleanCity/issues"
+  },
+  "devDependencies": {
+    "cypress": "^14.5.1"
+  }
+}
