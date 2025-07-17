@@ -1,7 +1,7 @@
 # 🧪TEST CASES 
 
 ---
-📋 CleanCity App – QA Test Cases  
+# 📋CleanCity App – QA Test Cases  
 
 Tester : Vuthlari Mabaso 
 
