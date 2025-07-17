@@ -5,7 +5,6 @@
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
-    "@testing-library/react": "^13.3.0",
     "@testing-library/user-event": "^13.5.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -37,29 +36,8 @@
       "last 1 safari version"
     ]
   },
-  "homepage": "http://.",
+  "homepage": ".",
   "devDependencies": {
-    "jest": "^29.7.0"
-  },
-  "main": "cypress.config.js",
-  "directories": {
-    "doc": "docs"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/palesa-pna/CleanCity.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/palesa-pna/CleanCity/issues"
-
-
-    "scripts": {
-  "test": "jest"
-}
-
+    "@testing-library/react": "^16.3.0"
   }
 }
-
