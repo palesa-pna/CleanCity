@@ -1,10 +1,9 @@
-✅TEST CASES 
-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+# 🧪TEST CASES 
 
 ---
-📋 CleanCity App – QA Test Cases  
+# 📋CleanCity App – QA Test Cases  
 
-Author: Vuthlari Mabaso 
+Tester : Vuthlari Mabaso 
 
 Last Updated: 16 July 2025
 
