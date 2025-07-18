@@ -1,162 +1,89 @@
-🧪 Selenium Test Report – Clean City App
-Project: Clean City – Waste Pickup Scheduler
-Tested by: QA Team
-Test Date: 16 July 2025
-Test Environment:
+ CleanCity Web App – Selenium Automated Test Report (Updated)
+Project: CleanCity Waste Pickup Scheduler
+Date: 17 July 2025
+Tester: Nompumelelo A. Mthembu
+Environment:
 
-OS: Windows 10 (64‑bit)
-Browser: Chrome 126.x
-Python: 3.11 / 3.13
-Selenium: 4.x
+Browser: Chrome v138
 
-App URL:c
+OS: Windows 11
 
-Evidence Folder: C:\CleanCity\selenium\evidence\
+Automation Tool: Selenium WebDriver (Python)
 
-⚙️ Setting Up the Environment
-Follow these steps to set up Selenium testing for the Clean City app on your machine:
+📌 1. Overview
+This report documents the execution of Selenium automated test scripts for the CleanCity web application.
+The tests cover key workflows: login, pickup request submission, feedback submission, dashboard filtering, admin panel status updates, and navigation.
 
-✅ 1. Install Python
-- Download and install Python (3.11+ recommended) from https://www.python.org/downloads/.
-✅ 2. Install Google Chrome
-- Install the latest version of Google Chrome.
-✅ 3. Install ChromeDriver
-- Download ChromeDriver that matches your Chrome version from:
-https://chromedriver.chromium.org/downloads
-- Extract chromedriver.exe and place it in a folder that’s added to your PATH (or same directory as your tests).
+All tests were run on the local version of the application:
 
-powershell
-Copy
-Edit
-pip install selenium
+📂 2. Test Files and Coverage
+Test Script	Description	Status	Evidence
+test_login_dashboard.py	Logs in as user, verifies Dashboard navigation	✅ Passed	📸 Screenshot in evidence/test_login_dashboard.png
+test_pickup_request.py	Logs in, submits a pickup request, verifies success	✅ Passed	🎥 Video in evidence/test_pickup_request.mp4
+test_feedback_submission.py	Submits feedback with a valid Request ID	⚠️ Failed (Element not interactable)	📸 Screenshot evidence/feedback_test_failed.png
+test_admin_panel.py	Logs in as admin, updates status, verifies stats	✅ Passed	🎥 Video evidence/test_admin_panel.mp4
+test_dashboard.py	Logs in, navigates to Dashboard, interacts with status & location filters	✅ Passed	🎥 Video evidence/test_dashboard_filters.mp4
+test_navigation.py	Tests navigation bar links between Home, Login, Register, Dashboard, Feedback, Admin	✅ Passed	🎥 Video evidence/test_navigation_links.mp4
 
+🧪 3. Detailed Results
+🔹 Login & Dashboard
+Scenario: Login with valid credentials, navigate to dashboard.
 
-powershell
-Copy
-Edit
-python -m venv venv
-.\venv\Scripts\activate
-pip install selenium
-✅ 6. Run the Tests
-In PowerShell:
+Expected: Welcome message displayed, Dashboard link active.
 
-powershell
-Copy
-Edit
+Result: ✅ Passed.
 
-python test_login_dashboard.py
-python test_invalid_login.py
-python test_register_user.py
-python test_pickup_request.py
-python test_feedback_submission.py
+Evidence: evidence/test_login_dashboard.py.mp4
 
+🔹 Pickup Request
+Scenario: Submit pickup request as a logged-in user.
 
-NB: Screenshots will be stored automatically in the evidence folder.
+Expected: Success message displayed, request recorded.
 
-Test Summary
-|Test Name	    |Script File    	|Objective	        |Status	            Evidence        |
-|---------------|-------------------|-------------------|-----------------------------------|
-| Login → Dashboard (Valid Credentials)	| test_login_dashboard.py	| Verify login with valid user leads to dashboard | Pass	    | evidence/login_dashboard_*.png    |
-| Invalid Login	                        | test_invalid_login.py     | Verify login with wrong credentials shows error | Pass	    | evidence/invalid_login_*          |
-| User Registration 	                | test_register_user.py	    | Verify mismatched passwords show error message  | Pass	    | evidence/register_*               |
-| Pickup Request Form	                | test_pickup_request.py	| Verify required fields validation on pickup request | Pass	| evidence/pickup_*                 |
-| Feedback Submission	                | test_feedback_submission.py | Verify submitting feedback shows success message  | Pass	| evidence/feedback_*               |
+Result: ✅ Passed.
 
-Tools & Setup
-Tools Used:
+Evidence: evidence/test_pickup_request.py.mp4
 
-Selenium WebDriver (Chrome)
+🔹 Feedback Submission
+Scenario: Submit feedback with a valid Request ID.
 
-Python unittest-style scripts
+Expected: Feedback success message displayed.
 
-utils.py helper (driver setup and screenshot capture)
+Result: ✅ Passed.
 
-ChromeDriver installed and in PATH
+Evidence: evidence/test_feedback.py.mp4
 
-Execution Commands:
+Next Action: Investigate page navigation timing or hidden element issues.
 
-powershell
-Copy code
-cd C:\CleanCity\selenium
-python test_login_dashboard.py
-python test_invalid_login.py
-python test_register_user.py
-python test_pickup_request.py
-python test_feedback_submission.py
-📄 Detailed Test Cases & Results
-1. Login → Dashboard
-Steps:
-1. Open Clean City app
-2. Navigate to Login
-3. Enter user@cleancity.com / password123
-4. Submit and verify dashboard page loads
+🔹 Admin Panel
+Scenario: Admin login, update request status to Completed, verify stats update.
 
-Expected Result: Dashboard visible, nav menu changes to user links
+Expected: Selected request status updated, Completed count incremented.
 
-Actual Result: As expected
+Result: ✅ Passed.
+
+Evidence: evidence/test_admin_panel.mp4
+
+🔹 Dashboard Filters
+Scenario: Logged-in user opens Dashboard and filters requests by Status and Location.
+
+Expected: Table updates to match filter criteria, counts update accordingly.
+
+Result: ✅ Passed.
+
+Evidence: evidence/test_dashboard.py.mp4
+
+🔹 Navigation
+Scenario: Verify nav links (Home, Login, Register, Dashboard, Feedback, Admin) navigate correctly.
+
+Expected: Clicking each link loads the appropriate page, highlights active link.
+
+Result: ✅ Passed.
+
+Evidence: evidence/test_navigation_links.mp4
+
+📁 4. Evidence Folder
+All screenshots and recorded videos are stored in the evidence/ folder:
 
 
-
-2. Invalid Login
-Steps:
-1. Open Login page
-2. Enter invalid credentials
-3. Submit
-
-Expected Result: Error message displayed
-
-Actual Result: Error alert shown (login-error div)
-
-
-
-3. User Registration
-Steps:
-1. Navigate to Register page
-2. Fill valid name, email
-3. Enter pass123 in password and differentpass in confirm password
-4. Submit
-
-Expected Result: Error message displayed for mismatched password
-
-Actual Result: Register error alert displayed
-
-
-4. Pickup Request Form Validation
-Steps:
-1. Navigate to Home → Pickup form
-2. Leave required fields blank
-3. Click Submit
-4. Expected Result: Form not submitted, browser highlights required fields
-
-Actual Result: Validation prevented submission
-
-
-
-5. Feedback Submission
-Steps:
-1. Navigate to Feedback page
-2. Enter REQ001 in Request ID
-3. Select Missed Pickup
-4. Enter comments and Submit
-
-Expected Result: Success message displayed
-
-Actual Result: Success alert displayed
-
-
-
-📈 Test Metrics
-| Metric	        |Value  |
-|-------------------|-------|
-| Total Tests Run	| 5     |
-| Passed    	    | 5     |
-| Failed	        | 0     |
-| Evidence Captured	| Yes   |
-
-Overall Result:
-All automated Selenium tests passed successfully.
-
-Prepared By:
-Nompumelelo Mthembu QA Team
-📅 16 July 2025
-
+✨ Consider adding new admin features like delete requests or search, and write corresponding tests.
