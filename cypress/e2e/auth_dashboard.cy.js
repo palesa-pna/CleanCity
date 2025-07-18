@@ -1,19 +1,21 @@
 describe('Pickup Request Form', () => {
   beforeEach(() => {
-    cy.visit('http://localhost:5500/index.html'); // Adjust if hosted elsewhere
-    cy.window().then(win => win.localStorage.clear()); // Clear storage for a clean state
+    cy.visit('index.html'); // adjust if hosted elsewhere
+    // optionally clear storage for a clean state
+    cy.window().then(win => win.localStorage.clear());
   });
 
   it('submits a valid pickup request', () => {
-    // Simulate logged-in user
-    cy.window().then(win => {
+    cy.get('[data-page="dashboard"]').click(); // login first if needed
+    // For test, simulate a logged-in user
+    cy.window().then((win) => {
       win.localStorage.setItem('currentUser', JSON.stringify({
         id: '1', email: 'user@cleancity.com', name: 'Demo User', role: 'user'
       }));
+      win.location.reload();
     });
 
-    cy.reload(); // Reload page after setting localStorage
-
+    cy.get('[data-page="home"]').click();
     cy.get('#pickup-form').within(() => {
       cy.get('input[name="fullName"]').type('Test User');
       cy.get('select[name="location"]').select('Nairobi');
@@ -23,7 +25,7 @@ describe('Pickup Request Form', () => {
     });
 
     cy.get('#success-message').should('contain.text', 'Request submitted successfully!');
-
+    // verify localStorage
     cy.window().then(win => {
       const data = JSON.parse(win.localStorage.getItem('cleancity_pickup_requests'));
       expect(data.some(r => r.name === 'Test User')).to.be.true;
