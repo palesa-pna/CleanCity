@@ -1,18 +1,22 @@
-describe('Feedback Tests', () => {
+describe('Feedback Page', () => {
   beforeEach(() => {
-    cy.visit('http://localhost:5500/index.html');
-    cy.contains('Login').click();
-    cy.get('#login-email').type('user@cleancity.com');
-    cy.get('#login-password').type('password123');
-    cy.get('#login-form').submit();
-    cy.contains('Feedback').click();
+    cy.visit('/');
+    cy.login('user@cleancity.com', 'password123');
+    cy.get('a[data-page="feedback"]').click();
   });
 
   it('submits feedback successfully', () => {
-    cy.get('#requestId').type('REQ001');
-    cy.get('#reason').select('Missed Pickup');
-    cy.get('#comments').type('Test feedback from Cypress');
+    cy.get('#feedback-form select[name="requestId"]').select('REQ001');
+    cy.get('#feedback-form select[name="reason"]').select('Delayed pickup');
+    cy.get('#feedback-form textarea[name="comments"]').type('Pickup was delayed by 2 days.');
     cy.get('#feedback-form').submit();
-    cy.get('#feedback-success').should('be.visible');
+
+    cy.get('#feedback-success').should('contain', 'Feedback submitted');
+  });
+
+  it('validates required fields', () => {
+    cy.get('#feedback-form').submit();
+    cy.get('#requestId-error').should('contain', 'Request ID is required');
+    cy.get('#reason-error').should('contain', 'Please select a reason');
   });
 });

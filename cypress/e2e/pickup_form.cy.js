@@ -1,21 +1,25 @@
-describe('Pickup Request Tests', () => {
+describe('Pickup Request Form', () => {
   beforeEach(() => {
-    cy.visit('http://localhost:5500/index.html');
-    cy.contains('Login').click();
-    cy.get('#login-email').type('user@cleancity.com');
-    cy.get('#login-password').type('password123');
-    cy.get('#login-form').submit();
-    cy.contains('Home').click();
+    cy.visit('/');
+    cy.login('user@cleancity.com', 'password123');
+    cy.get('a[data-page="dashboard"]').click();
   });
 
-  it('submits a pickup request', () => {
-    cy.get('#pickup-form').within(() => {
-      cy.get('#fullName').type('Cypress User');
-      cy.get('#location').select('Nairobi');
-      cy.get('input[name="wasteType"][value="General"]').check();
-      cy.get('#preferredDate').type('2025-08-01');
-      cy.get('button[type="submit"]').click();
-    });
-    cy.get('#success-message').should('be.visible');
+  it('submits pickup request successfully', () => {
+    cy.get('a[data-page="home"]').click();
+    cy.get('#pickup-form input[name="fullName"]').type('Test User');
+    cy.get('#pickup-form select[name="location"]').select('Nairobi');
+    cy.get('#pickup-form select[name="wasteType"]').select('General Waste');
+    cy.get('#pickup-form input[name="preferredDate"]').type('2025-08-01');
+    cy.get('#pickup-form').submit();
+
+    cy.get('#success-message').should('contain', 'Request submitted');
+  });
+
+  it('validates required fields', () => {
+    cy.get('#pickup-form').submit();
+    cy.get('#name-error').should('contain', 'Full name is required');
+    cy.get('#location-error').should('contain', 'Please select a location');
+    cy.get('#waste-error').should('contain', 'Please select a waste type');
   });
 });
